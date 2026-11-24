@@ -1,0 +1,22 @@
+[
+  {"policy_id": "POL-1001", "holder": "Asha Rao", "vehicle": "Hyundai i20 Sportz",
+   "registration_date": "2023-06-01", "insured_value": 400000,
+   "start_date": "2026-01-01", "end_date": "2026-12-31",
+   "cover_type": "comprehensive", "deductible": 1000, "prior_claims_12m": 0},
+  {"policy_id": "POL-1002", "holder": "Vikram Shah", "vehicle": "Maruti Baleno Delta",
+   "registration_date": "2021-03-15", "insured_value": 250000,
+   "start_date": "2026-02-01", "end_date": "2027-01-31",
+   "cover_type": "third_party", "deductible": 0, "prior_claims_12m": 0},
+  {"policy_id": "POL-1003", "holder": "Neha Joshi", "vehicle": "Tata Nexon XZ",
+   "registration_date": "2025-09-10", "insured_value": 650000,
+   "start_date": "2026-03-01", "end_date": "2027-02-28",
+   "cover_type": "comprehensive", "deductible": 2000, "prior_claims_12m": 0},
+  {"policy_id": "POL-1004", "holder": "Imran Khan", "vehicle": "Honda City V",
+   "registration_date": "2020-01-20", "insured_value": 300000,
+   "start_date": "2025-04-01", "end_date": "2026-03-31",
+   "cover_type": "comprehensive", "deductible": 1500, "prior_claims_12m": 0},
+  {"policy_id": "POL-1005", "holder": "Pooja Nair", "vehicle": "Kia Seltos HTK",
+   "registration_date": "2022-11-05", "insured_value": 500000,
+   "start_date": "2026-01-15", "end_date": "2027-01-14",
+   "cover_type": "comprehensive", "deductible": 1500, "prior_claims_12m": 2}
+]
