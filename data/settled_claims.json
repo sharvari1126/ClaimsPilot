@@ -1,0 +1,1719 @@
+[
+  {
+    "claim": {
+      "claim_id": "CLM-001",
+      "policy_id": "POL-1001",
+      "loss_date": "2026-07-30",
+      "report_date": "2026-07-31",
+      "cause": "collision",
+      "description": "Collision damage.",
+      "parts": [
+        {
+          "name": "front bumper",
+          "category": "rubber_plastic",
+          "cost": 7200
+        },
+        {
+          "name": "fibreglass spoiler",
+          "category": "fibreglass",
+          "cost": 9600
+        },
+        {
+          "name": "bonnet",
+          "category": "metal",
+          "cost": 29900
+        }
+      ],
+      "labour_cost": 3700,
+      "driver_licensed": true,
+      "under_influence": false,
+      "commercial_use": false,
+      "police_report_filed": null
+    },
+    "settlement": {
+      "claim_id": "CLM-001",
+      "decision": "approve",
+      "paid": 30960,
+      "adjuster_notes": "collision incident on 30 July 2026, notified 31 July 2026. Workshop estimate: front bumper Rs 7,200, fibreglass spoiler Rs 9,600, bonnet Rs 29,900, labour Rs 3,700. Checks: valid licence confirmed, driver not under influence, private use. Outcome: Settled, paid Rs 30,960."
+    },
+    "ground_truth": {
+      "status": "correct",
+      "injected_cause": null
+    }
+  },
+  {
+    "claim": {
+      "claim_id": "CLM-002",
+      "policy_id": "POL-1003",
+      "loss_date": "2026-06-08",
+      "report_date": "2026-06-08",
+      "cause": "collision",
+      "description": "Collision damage.",
+      "parts": [
+        {
+          "name": "windscreen",
+          "category": "glass",
+          "cost": 6800
+        },
+        {
+          "name": "door panel",
+          "category": "metal",
+          "cost": 18100
+        }
+      ],
+      "labour_cost": 4100,
+      "driver_licensed": true,
+      "under_influence": false,
+      "commercial_use": false,
+      "police_report_filed": null
+    },
+    "settlement": {
+      "claim_id": "CLM-002",
+      "decision": "approve",
+      "paid": 24285,
+      "adjuster_notes": "collision incident on 8 June 2026, notified 8 June 2026. Workshop estimate: windscreen Rs 6,800, door panel Rs 18,100, labour Rs 4,100. Checks: valid licence confirmed, driver not under influence, private use. Outcome: Settled, paid Rs 24,285."
+    },
+    "ground_truth": {
+      "status": "correct",
+      "injected_cause": null
+    }
+  },
+  {
+    "claim": {
+      "claim_id": "CLM-003",
+      "policy_id": "POL-1005",
+      "loss_date": "2026-10-04",
+      "report_date": "2026-10-04",
+      "cause": "collision",
+      "description": "Collision damage.",
+      "parts": [
+        {
+          "name": "rear bumper",
+          "category": "rubber_plastic",
+          "cost": 6700
+        },
+        {
+          "name": "fibreglass spoiler",
+          "category": "fibreglass",
+          "cost": 10000
+        },
+        {
+          "name": "front fender",
+          "category": "metal",
+          "cost": 8600
+        },
+        {
+          "name": "bonnet",
+          "category": "metal",
+          "cost": 20600
+        }
+      ],
+      "labour_cost": 3500,
+      "driver_licensed": true,
+      "under_influence": false,
+      "commercial_use": false,
+      "police_report_filed": null
+    },
+    "settlement": {
+      "claim_id": "CLM-003",
+      "decision": "approve",
+      "paid": 29870,
+      "adjuster_notes": "collision incident on 4 October 2026, notified 4 October 2026. Workshop estimate: rear bumper Rs 6,700, fibreglass spoiler Rs 10,000, front fender Rs 8,600, bonnet Rs 20,600, labour Rs 3,500. Checks: valid licence confirmed, driver not under influence, private use. Outcome: Settled, paid Rs 29,870."
+    },
+    "ground_truth": {
+      "status": "correct",
+      "injected_cause": null
+    }
+  },
+  {
+    "claim": {
+      "claim_id": "CLM-004",
+      "policy_id": "POL-1001",
+      "loss_date": "2026-04-24",
+      "report_date": "2026-04-26",
+      "cause": "collision",
+      "description": "Collision damage.",
+      "parts": [
+        {
+          "name": "headlamp assembly",
+          "category": "rubber_plastic",
+          "cost": 12300
+        },
+        {
+          "name": "bonnet",
+          "category": "metal",
+          "cost": 22800
+        },
+        {
+          "name": "front bumper",
+          "category": "rubber_plastic",
+          "cost": 13100
+        }
+      ],
+      "labour_cost": 11700,
+      "driver_licensed": true,
+      "under_influence": false,
+      "commercial_use": false,
+      "police_report_filed": null
+    },
+    "settlement": {
+      "claim_id": "CLM-004",
+      "decision": "approve",
+      "paid": 39360,
+      "adjuster_notes": "Insured reported a collision loss that happened on 24 April 2026. Intimation received on 26 April 2026. Estimate: headlamp assembly Rs 12,300, bonnet Rs 22,800, front bumper Rs 13,100; labour Rs 11,700. Notes: valid licence confirmed, driver not under influence, private use. Settled, paid Rs 39,360."
+    },
+    "ground_truth": {
+      "status": "correct",
+      "injected_cause": null
+    }
+  },
+  {
+    "claim": {
+      "claim_id": "CLM-005",
+      "policy_id": "POL-1003",
+      "loss_date": "2026-05-11",
+      "report_date": "2026-05-15",
+      "cause": "collision",
+      "description": "Collision damage.",
+      "parts": [
+        {
+          "name": "door panel",
+          "category": "metal",
+          "cost": 13600
+        },
+        {
+          "name": "headlamp assembly",
+          "category": "rubber_plastic",
+          "cost": 12200
+        },
+        {
+          "name": "front bumper",
+          "category": "rubber_plastic",
+          "cost": 6700
+        },
+        {
+          "name": "bonnet",
+          "category": "metal",
+          "cost": 30800
+        }
+      ],
+      "labour_cost": 5600,
+      "driver_licensed": true,
+      "under_influence": false,
+      "commercial_use": false,
+      "police_report_filed": null
+    },
+    "settlement": {
+      "claim_id": "CLM-005",
+      "decision": "approve",
+      "paid": 50790,
+      "adjuster_notes": "Loss date 11 May 2026; claim reported 15 May 2026. Cause: collision. Repairer quote lists door panel Rs 13,600, headlamp assembly Rs 12,200, front bumper Rs 6,700, bonnet Rs 30,800 and labour of Rs 5,600. File remarks - valid licence confirmed; driver not under influence; private use. Settled, paid Rs 50,790."
+    },
+    "ground_truth": {
+      "status": "correct",
+      "injected_cause": null
+    }
+  },
+  {
+    "claim": {
+      "claim_id": "CLM-006",
+      "policy_id": "POL-1005",
+      "loss_date": "2026-10-05",
+      "report_date": "2026-10-07",
+      "cause": "collision",
+      "description": "Collision damage.",
+      "parts": [
+        {
+          "name": "fibreglass spoiler",
+          "category": "fibreglass",
+          "cost": 8100
+        },
+        {
+          "name": "headlamp assembly",
+          "category": "rubber_plastic",
+          "cost": 7300
+        },
+        {
+          "name": "windscreen",
+          "category": "glass",
+          "cost": 14900
+        }
+      ],
+      "labour_cost": 6100,
+      "driver_licensed": true,
+      "under_influence": false,
+      "commercial_use": false,
+      "police_report_filed": null
+    },
+    "settlement": {
+      "claim_id": "CLM-006",
+      "decision": "approve",
+      "paid": 28820,
+      "adjuster_notes": "Insured reported a collision loss that happened on 5 October 2026. Intimation received on 7 October 2026. Estimate: fibreglass spoiler Rs 8,100, headlamp assembly Rs 7,300, windscreen Rs 14,900; labour Rs 6,100. Notes: valid licence confirmed, driver not under influence, private use. Settled, paid Rs 28,820."
+    },
+    "ground_truth": {
+      "status": "correct",
+      "injected_cause": null
+    }
+  },
+  {
+    "claim": {
+      "claim_id": "CLM-007",
+      "policy_id": "POL-1001",
+      "loss_date": "2026-07-18",
+      "report_date": "2026-07-22",
+      "cause": "collision",
+      "description": "Collision damage.",
+      "parts": [
+        {
+          "name": "front fender",
+          "category": "metal",
+          "cost": 11600
+        },
+        {
+          "name": "fibreglass spoiler",
+          "category": "fibreglass",
+          "cost": 5900
+        },
+        {
+          "name": "door panel",
+          "category": "metal",
+          "cost": 15000
+        }
+      ],
+      "labour_cost": 9500,
+      "driver_licensed": true,
+      "under_influence": false,
+      "commercial_use": false,
+      "police_report_filed": null
+    },
+    "settlement": {
+      "claim_id": "CLM-007",
+      "decision": "approve",
+      "paid": 28590,
+      "adjuster_notes": "Loss date 18 July 2026; claim reported 22 July 2026. Cause: collision. Repairer quote lists front fender Rs 11,600, fibreglass spoiler Rs 5,900, door panel Rs 15,000 and labour of Rs 9,500. File remarks - valid licence confirmed; driver not under influence; private use. Settled, paid Rs 28,590."
+    },
+    "ground_truth": {
+      "status": "correct",
+      "injected_cause": null
+    }
+  },
+  {
+    "claim": {
+      "claim_id": "CLM-008",
+      "policy_id": "POL-1003",
+      "loss_date": "2026-05-27",
+      "report_date": "2026-05-29",
+      "cause": "collision",
+      "description": "Collision damage.",
+      "parts": [
+        {
+          "name": "fibreglass spoiler",
+          "category": "fibreglass",
+          "cost": 5500
+        },
+        {
+          "name": "door panel",
+          "category": "metal",
+          "cost": 13900
+        }
+      ],
+      "labour_cost": 10100,
+      "driver_licensed": true,
+      "under_influence": false,
+      "commercial_use": false,
+      "police_report_filed": null
+    },
+    "settlement": {
+      "claim_id": "CLM-008",
+      "decision": "approve",
+      "paid": 23765,
+      "adjuster_notes": "collision incident on 27 May 2026, notified 29 May 2026. Workshop estimate: fibreglass spoiler Rs 5,500, door panel Rs 13,900, labour Rs 10,100. Checks: valid licence confirmed, driver not under influence, private use. Outcome: Settled, paid Rs 23,765."
+    },
+    "ground_truth": {
+      "status": "correct",
+      "injected_cause": null
+    }
+  },
+  {
+    "claim": {
+      "claim_id": "CLM-009",
+      "policy_id": "POL-1005",
+      "loss_date": "2026-08-08",
+      "report_date": "2026-08-10",
+      "cause": "collision",
+      "description": "Collision damage.",
+      "parts": [
+        {
+          "name": "front fender",
+          "category": "metal",
+          "cost": 13800
+        },
+        {
+          "name": "bonnet",
+          "category": "metal",
+          "cost": 16700
+        },
+        {
+          "name": "door panel",
+          "category": "metal",
+          "cost": 14300
+        },
+        {
+          "name": "windscreen",
+          "category": "glass",
+          "cost": 9400
+        }
+      ],
+      "labour_cost": 9000,
+      "driver_licensed": true,
+      "under_influence": false,
+      "commercial_use": false,
+      "police_report_filed": null
+    },
+    "settlement": {
+      "claim_id": "CLM-009",
+      "decision": "approve",
+      "paid": 43780,
+      "adjuster_notes": "collision incident on 8 August 2026, notified 10 August 2026. Workshop estimate: front fender Rs 13,800, bonnet Rs 16,700, door panel Rs 14,300, windscreen Rs 9,400, labour Rs 9,000. Checks: valid licence confirmed, driver not under influence, private use. Outcome: Settled, paid Rs 43,780."
+    },
+    "ground_truth": {
+      "status": "correct",
+      "injected_cause": null
+    }
+  },
+  {
+    "claim": {
+      "claim_id": "CLM-010",
+      "policy_id": "POL-1001",
+      "loss_date": "2026-03-20",
+      "report_date": "2026-03-20",
+      "cause": "collision",
+      "description": "Collision damage.",
+      "parts": [
+        {
+          "name": "bonnet",
+          "category": "metal",
+          "cost": 22200
+        },
+        {
+          "name": "front fender",
+          "category": "metal",
+          "cost": 17100
+        },
+        {
+          "name": "fibreglass spoiler",
+          "category": "fibreglass",
+          "cost": 9900
+        },
+        {
+          "name": "door panel",
+          "category": "metal",
+          "cost": 20800
+        }
+      ],
+      "labour_cost": 3200,
+      "driver_licensed": true,
+      "under_influence": false,
+      "commercial_use": false,
+      "police_report_filed": null
+    },
+    "settlement": {
+      "claim_id": "CLM-010",
+      "decision": "approve",
+      "paid": 51200,
+      "adjuster_notes": "Loss date 20 March 2026; claim reported 20 March 2026. Cause: collision. Repairer quote lists bonnet Rs 22,200, front fender Rs 17,100, fibreglass spoiler Rs 9,900, door panel Rs 20,800 and labour of Rs 3,200. File remarks - valid licence confirmed; driver not under influence; private use. Settled, paid Rs 51,200."
+    },
+    "ground_truth": {
+      "status": "correct",
+      "injected_cause": null
+    }
+  },
+  {
+    "claim": {
+      "claim_id": "CLM-011",
+      "policy_id": "POL-1003",
+      "loss_date": "2026-07-14",
+      "report_date": "2026-07-15",
+      "cause": "collision",
+      "description": "Collision damage.",
+      "parts": [
+        {
+          "name": "rear bumper",
+          "category": "rubber_plastic",
+          "cost": 9600
+        },
+        {
+          "name": "door panel",
+          "category": "metal",
+          "cost": 15300
+        },
+        {
+          "name": "front bumper",
+          "category": "rubber_plastic",
+          "cost": 9100
+        },
+        {
+          "name": "fibreglass spoiler",
+          "category": "fibreglass",
+          "cost": 10000
+        }
+      ],
+      "labour_cost": 8000,
+      "driver_licensed": true,
+      "under_influence": false,
+      "commercial_use": false,
+      "police_report_filed": null
+    },
+    "settlement": {
+      "claim_id": "CLM-011",
+      "decision": "approve",
+      "paid": 35355,
+      "adjuster_notes": "Loss date 14 July 2026; claim reported 15 July 2026. Cause: collision. Repairer quote lists rear bumper Rs 9,600, door panel Rs 15,300, front bumper Rs 9,100, fibreglass spoiler Rs 10,000 and labour of Rs 8,000. File remarks - valid licence confirmed; driver not under influence; private use. Settled, paid Rs 35,355."
+    },
+    "ground_truth": {
+      "status": "correct",
+      "injected_cause": null
+    }
+  },
+  {
+    "claim": {
+      "claim_id": "CLM-012",
+      "policy_id": "POL-1005",
+      "loss_date": "2026-04-11",
+      "report_date": "2026-04-12",
+      "cause": "collision",
+      "description": "Collision damage.",
+      "parts": [
+        {
+          "name": "windscreen",
+          "category": "glass",
+          "cost": 7700
+        },
+        {
+          "name": "bonnet",
+          "category": "metal",
+          "cost": 26000
+        },
+        {
+          "name": "headlamp assembly",
+          "category": "rubber_plastic",
+          "cost": 12000
+        }
+      ],
+      "labour_cost": 6500,
+      "driver_licensed": true,
+      "under_influence": false,
+      "commercial_use": false,
+      "police_report_filed": null
+    },
+    "settlement": {
+      "claim_id": "CLM-012",
+      "decision": "approve",
+      "paid": 34300,
+      "adjuster_notes": "collision incident on 11 April 2026, notified 12 April 2026. Workshop estimate: windscreen Rs 7,700, bonnet Rs 26,000, headlamp assembly Rs 12,000, labour Rs 6,500. Checks: valid licence confirmed, driver not under influence, private use. Outcome: Settled, paid Rs 34,300."
+    },
+    "ground_truth": {
+      "status": "correct",
+      "injected_cause": null
+    }
+  },
+  {
+    "claim": {
+      "claim_id": "CLM-013",
+      "policy_id": "POL-1001",
+      "loss_date": "2026-09-15",
+      "report_date": "2026-09-17",
+      "cause": "collision",
+      "description": "Collision damage.",
+      "parts": [
+        {
+          "name": "windscreen",
+          "category": "glass",
+          "cost": 8200
+        },
+        {
+          "name": "rear bumper",
+          "category": "rubber_plastic",
+          "cost": 7900
+        },
+        {
+          "name": "fibreglass spoiler",
+          "category": "fibreglass",
+          "cost": 7900
+        },
+        {
+          "name": "front bumper",
+          "category": "rubber_plastic",
+          "cost": 8900
+        }
+      ],
+      "labour_cost": 3100,
+      "driver_licensed": true,
+      "under_influence": false,
+      "commercial_use": false,
+      "police_report_filed": null
+    },
+    "settlement": {
+      "claim_id": "CLM-013",
+      "decision": "approve",
+      "paid": 24230,
+      "adjuster_notes": "Loss date 15 September 2026; claim reported 17 September 2026. Cause: collision. Repairer quote lists windscreen Rs 8,200, rear bumper Rs 7,900, fibreglass spoiler Rs 7,900, front bumper Rs 8,900 and labour of Rs 3,100. File remarks - valid licence confirmed; driver not under influence; private use. Settled, paid Rs 24,230."
+    },
+    "ground_truth": {
+      "status": "correct",
+      "injected_cause": null
+    }
+  },
+  {
+    "claim": {
+      "claim_id": "CLM-014",
+      "policy_id": "POL-1003",
+      "loss_date": "2026-11-13",
+      "report_date": "2026-11-17",
+      "cause": "collision",
+      "description": "Collision damage.",
+      "parts": [
+        {
+          "name": "bonnet",
+          "category": "metal",
+          "cost": 15100
+        },
+        {
+          "name": "headlamp assembly",
+          "category": "rubber_plastic",
+          "cost": 6800
+        }
+      ],
+      "labour_cost": 8300,
+      "driver_licensed": true,
+      "under_influence": false,
+      "commercial_use": false,
+      "police_report_filed": null
+    },
+    "settlement": {
+      "claim_id": "CLM-014",
+      "decision": "approve",
+      "paid": 21780,
+      "adjuster_notes": "collision incident on 13 November 2026, notified 17 November 2026. Workshop estimate: bonnet Rs 15,100, headlamp assembly Rs 6,800, labour Rs 8,300. Checks: valid licence confirmed, driver not under influence, private use. Outcome: Settled, paid Rs 21,780."
+    },
+    "ground_truth": {
+      "status": "correct",
+      "injected_cause": null
+    }
+  },
+  {
+    "claim": {
+      "claim_id": "CLM-015",
+      "policy_id": "POL-1001",
+      "loss_date": "2026-08-23",
+      "report_date": "2026-08-27",
+      "cause": "collision",
+      "description": "Collision damage.",
+      "parts": [
+        {
+          "name": "front fender",
+          "category": "metal",
+          "cost": 15900
+        },
+        {
+          "name": "rear bumper",
+          "category": "rubber_plastic",
+          "cost": 6600
+        },
+        {
+          "name": "fibreglass spoiler",
+          "category": "fibreglass",
+          "cost": 10800
+        },
+        {
+          "name": "bonnet",
+          "category": "metal",
+          "cost": 34900
+        }
+      ],
+      "labour_cost": 11700,
+      "driver_licensed": true,
+      "under_influence": true,
+      "commercial_use": false,
+      "police_report_filed": null
+    },
+    "settlement": {
+      "claim_id": "CLM-015",
+      "decision": "deny",
+      "paid": 0,
+      "adjuster_notes": "collision incident on 23 August 2026, notified 27 August 2026. Workshop estimate: front fender Rs 15,900, rear bumper Rs 6,600, fibreglass spoiler Rs 10,800, bonnet Rs 34,900, labour Rs 11,700. Checks: valid licence confirmed, driver was under the influence of alcohol, private use. Outcome: Claim denied."
+    },
+    "ground_truth": {
+      "status": "correct",
+      "injected_cause": null
+    }
+  },
+  {
+    "claim": {
+      "claim_id": "CLM-016",
+      "policy_id": "POL-1001",
+      "loss_date": "2026-09-03",
+      "report_date": "2026-09-06",
+      "cause": "collision",
+      "description": "Collision damage.",
+      "parts": [
+        {
+          "name": "windscreen",
+          "category": "glass",
+          "cost": 14100
+        },
+        {
+          "name": "front bumper",
+          "category": "rubber_plastic",
+          "cost": 11100
+        },
+        {
+          "name": "door panel",
+          "category": "metal",
+          "cost": 13500
+        }
+      ],
+      "labour_cost": 5400,
+      "driver_licensed": true,
+      "under_influence": true,
+      "commercial_use": false,
+      "police_report_filed": null
+    },
+    "settlement": {
+      "claim_id": "CLM-016",
+      "decision": "deny",
+      "paid": 0,
+      "adjuster_notes": "Insured reported a collision loss that happened on 3 September 2026. Intimation received on 6 September 2026. Estimate: windscreen Rs 14,100, front bumper Rs 11,100, door panel Rs 13,500; labour Rs 5,400. Notes: valid licence confirmed, driver was under the influence of alcohol, private use. Claim denied."
+    },
+    "ground_truth": {
+      "status": "correct",
+      "injected_cause": null
+    }
+  },
+  {
+    "claim": {
+      "claim_id": "CLM-017",
+      "policy_id": "POL-1001",
+      "loss_date": "2026-06-01",
+      "report_date": "2026-06-04",
+      "cause": "collision",
+      "description": "Collision damage.",
+      "parts": [
+        {
+          "name": "rear bumper",
+          "category": "rubber_plastic",
+          "cost": 13600
+        },
+        {
+          "name": "headlamp assembly",
+          "category": "rubber_plastic",
+          "cost": 5600
+        }
+      ],
+      "labour_cost": 4300,
+      "driver_licensed": true,
+      "under_influence": true,
+      "commercial_use": false,
+      "police_report_filed": null
+    },
+    "settlement": {
+      "claim_id": "CLM-017",
+      "decision": "deny",
+      "paid": 0,
+      "adjuster_notes": "Insured reported a collision loss that happened on 1 June 2026. Intimation received on 4 June 2026. Estimate: rear bumper Rs 13,600, headlamp assembly Rs 5,600; labour Rs 4,300. Notes: valid licence confirmed, driver was under the influence of alcohol, private use. Claim denied."
+    },
+    "ground_truth": {
+      "status": "correct",
+      "injected_cause": null
+    }
+  },
+  {
+    "claim": {
+      "claim_id": "CLM-018",
+      "policy_id": "POL-1005",
+      "loss_date": "2026-05-17",
+      "report_date": "2026-05-27",
+      "cause": "collision",
+      "description": "Collision damage.",
+      "parts": [
+        {
+          "name": "front fender",
+          "category": "metal",
+          "cost": 8300
+        },
+        {
+          "name": "bonnet",
+          "category": "metal",
+          "cost": 16800
+        }
+      ],
+      "labour_cost": 5600,
+      "driver_licensed": true,
+      "under_influence": false,
+      "commercial_use": false,
+      "police_report_filed": null
+    },
+    "settlement": {
+      "claim_id": "CLM-018",
+      "decision": "escalate",
+      "paid": 0,
+      "adjuster_notes": "collision incident on 17 May 2026, notified 27 May 2026. Workshop estimate: front fender Rs 8,300, bonnet Rs 16,800, labour Rs 5,600. Checks: valid licence confirmed, driver not under influence, private use. Outcome: Referred to SIU, no payment."
+    },
+    "ground_truth": {
+      "status": "correct",
+      "injected_cause": null
+    }
+  },
+  {
+    "claim": {
+      "claim_id": "CLM-019",
+      "policy_id": "POL-1005",
+      "loss_date": "2026-09-09",
+      "report_date": "2026-09-19",
+      "cause": "collision",
+      "description": "Collision damage.",
+      "parts": [
+        {
+          "name": "bonnet",
+          "category": "metal",
+          "cost": 27100
+        },
+        {
+          "name": "headlamp assembly",
+          "category": "rubber_plastic",
+          "cost": 6500
+        },
+        {
+          "name": "fibreglass spoiler",
+          "category": "fibreglass",
+          "cost": 6400
+        },
+        {
+          "name": "windscreen",
+          "category": "glass",
+          "cost": 12200
+        }
+      ],
+      "labour_cost": 8900,
+      "driver_licensed": true,
+      "under_influence": false,
+      "commercial_use": false,
+      "police_report_filed": null
+    },
+    "settlement": {
+      "claim_id": "CLM-019",
+      "decision": "escalate",
+      "paid": 0,
+      "adjuster_notes": "Loss date 9 September 2026; claim reported 19 September 2026. Cause: collision. Repairer quote lists bonnet Rs 27,100, headlamp assembly Rs 6,500, fibreglass spoiler Rs 6,400, windscreen Rs 12,200 and labour of Rs 8,900. File remarks - valid licence confirmed; driver not under influence; private use. Referred to SIU, no payment."
+    },
+    "ground_truth": {
+      "status": "correct",
+      "injected_cause": null
+    }
+  },
+  {
+    "claim": {
+      "claim_id": "CLM-020",
+      "policy_id": "POL-1003",
+      "loss_date": "2026-07-03",
+      "report_date": "2026-07-03",
+      "cause": "collision",
+      "description": "Collision damage.",
+      "parts": [
+        {
+          "name": "rear bumper",
+          "category": "rubber_plastic",
+          "cost": 10300
+        },
+        {
+          "name": "front fender",
+          "category": "metal",
+          "cost": 17400
+        }
+      ],
+      "labour_cost": 6300,
+      "driver_licensed": true,
+      "under_influence": false,
+      "commercial_use": false,
+      "police_report_filed": null
+    },
+    "settlement": {
+      "claim_id": "CLM-020",
+      "decision": "approve",
+      "paid": 26240,
+      "adjuster_notes": "Loss date 3 July 2026; claim reported 3 July 2026. Cause: collision. Repairer quote lists rear bumper Rs 10,300, front fender Rs 17,400 and labour of Rs 6,300. File remarks - valid licence confirmed; driver not under influence; private use. Settled, paid Rs 26,240."
+    },
+    "ground_truth": {
+      "status": "overpaid",
+      "injected_cause": "deductible_ignored"
+    }
+  },
+  {
+    "claim": {
+      "claim_id": "CLM-021",
+      "policy_id": "POL-1005",
+      "loss_date": "2026-05-22",
+      "report_date": "2026-05-26",
+      "cause": "collision",
+      "description": "Collision damage.",
+      "parts": [
+        {
+          "name": "door panel",
+          "category": "metal",
+          "cost": 21200
+        },
+        {
+          "name": "bonnet",
+          "category": "metal",
+          "cost": 18700
+        }
+      ],
+      "labour_cost": 11800,
+      "driver_licensed": true,
+      "under_influence": false,
+      "commercial_use": false,
+      "police_report_filed": null
+    },
+    "settlement": {
+      "claim_id": "CLM-021",
+      "decision": "approve",
+      "paid": 35740,
+      "adjuster_notes": "collision incident on 22 May 2026, notified 26 May 2026. Workshop estimate: door panel Rs 21,200, bonnet Rs 18,700, labour Rs 11,800. Checks: valid licence confirmed, driver not under influence, private use. Outcome: Settled, paid Rs 35,740."
+    },
+    "ground_truth": {
+      "status": "overpaid",
+      "injected_cause": "deductible_ignored"
+    }
+  },
+  {
+    "claim": {
+      "claim_id": "CLM-022",
+      "policy_id": "POL-1001",
+      "loss_date": "2026-11-12",
+      "report_date": "2026-11-14",
+      "cause": "collision",
+      "description": "Collision damage.",
+      "parts": [
+        {
+          "name": "rear bumper",
+          "category": "rubber_plastic",
+          "cost": 10600
+        },
+        {
+          "name": "front fender",
+          "category": "metal",
+          "cost": 10100
+        },
+        {
+          "name": "headlamp assembly",
+          "category": "rubber_plastic",
+          "cost": 9500
+        },
+        {
+          "name": "bonnet",
+          "category": "metal",
+          "cost": 34700
+        }
+      ],
+      "labour_cost": 5800,
+      "driver_licensed": true,
+      "under_influence": false,
+      "commercial_use": false,
+      "police_report_filed": null
+    },
+    "settlement": {
+      "claim_id": "CLM-022",
+      "decision": "approve",
+      "paid": 42730,
+      "adjuster_notes": "collision incident on 12 November 2026, notified 14 November 2026. Workshop estimate: rear bumper Rs 10,600, front fender Rs 10,100, headlamp assembly Rs 9,500, bonnet Rs 34,700, labour Rs 5,800. Checks: valid licence confirmed, driver not under influence, private use. Outcome: Settled, paid Rs 42,730."
+    },
+    "ground_truth": {
+      "status": "overpaid",
+      "injected_cause": "deductible_ignored"
+    }
+  },
+  {
+    "claim": {
+      "claim_id": "CLM-023",
+      "policy_id": "POL-1005",
+      "loss_date": "2026-11-13",
+      "report_date": "2026-11-15",
+      "cause": "collision",
+      "description": "Collision damage.",
+      "parts": [
+        {
+          "name": "door panel",
+          "category": "metal",
+          "cost": 22200
+        },
+        {
+          "name": "bonnet",
+          "category": "metal",
+          "cost": 33900
+        },
+        {
+          "name": "rear bumper",
+          "category": "rubber_plastic",
+          "cost": 8900
+        },
+        {
+          "name": "front fender",
+          "category": "metal",
+          "cost": 10500
+        }
+      ],
+      "labour_cost": 9600,
+      "driver_licensed": true,
+      "under_influence": false,
+      "commercial_use": false,
+      "police_report_filed": null
+    },
+    "settlement": {
+      "claim_id": "CLM-023",
+      "decision": "approve",
+      "paid": 51010,
+      "adjuster_notes": "Loss date 13 November 2026; claim reported 15 November 2026. Cause: collision. Repairer quote lists door panel Rs 22,200, bonnet Rs 33,900, rear bumper Rs 8,900, front fender Rs 10,500 and labour of Rs 9,600. File remarks - valid licence confirmed; driver not under influence; private use. Settled, paid Rs 51,010."
+    },
+    "ground_truth": {
+      "status": "underpaid",
+      "injected_cause": "deductible_applied_twice"
+    }
+  },
+  {
+    "claim": {
+      "claim_id": "CLM-024",
+      "policy_id": "POL-1003",
+      "loss_date": "2026-10-19",
+      "report_date": "2026-10-19",
+      "cause": "collision",
+      "description": "Collision damage.",
+      "parts": [
+        {
+          "name": "bonnet",
+          "category": "metal",
+          "cost": 21600
+        },
+        {
+          "name": "door panel",
+          "category": "metal",
+          "cost": 16900
+        }
+      ],
+      "labour_cost": 11800,
+      "driver_licensed": true,
+      "under_influence": false,
+      "commercial_use": false,
+      "police_report_filed": null
+    },
+    "settlement": {
+      "claim_id": "CLM-024",
+      "decision": "approve",
+      "paid": 38600,
+      "adjuster_notes": "collision incident on 19 October 2026, notified 19 October 2026. Workshop estimate: bonnet Rs 21,600, door panel Rs 16,900, labour Rs 11,800. Checks: valid licence confirmed, driver not under influence, private use. Outcome: Settled, paid Rs 38,600."
+    },
+    "ground_truth": {
+      "status": "underpaid",
+      "injected_cause": "deductible_applied_twice"
+    }
+  },
+  {
+    "claim": {
+      "claim_id": "CLM-025",
+      "policy_id": "POL-1003",
+      "loss_date": "2026-08-07",
+      "report_date": "2026-08-09",
+      "cause": "collision",
+      "description": "Collision damage.",
+      "parts": [
+        {
+          "name": "rear bumper",
+          "category": "rubber_plastic",
+          "cost": 8900
+        },
+        {
+          "name": "fibreglass spoiler",
+          "category": "fibreglass",
+          "cost": 11000
+        },
+        {
+          "name": "front bumper",
+          "category": "rubber_plastic",
+          "cost": 8500
+        }
+      ],
+      "labour_cost": 7300,
+      "driver_licensed": true,
+      "under_influence": false,
+      "commercial_use": false,
+      "police_report_filed": null
+    },
+    "settlement": {
+      "claim_id": "CLM-025",
+      "decision": "approve",
+      "paid": 19700,
+      "adjuster_notes": "Insured reported a collision loss that happened on 7 August 2026. Intimation received on 9 August 2026. Estimate: rear bumper Rs 8,900, fibreglass spoiler Rs 11,000, front bumper Rs 8,500; labour Rs 7,300. Notes: valid licence confirmed, driver not under influence, private use. Settled, paid Rs 19,700."
+    },
+    "ground_truth": {
+      "status": "underpaid",
+      "injected_cause": "deductible_applied_twice"
+    }
+  },
+  {
+    "claim": {
+      "claim_id": "CLM-026",
+      "policy_id": "POL-1003",
+      "loss_date": "2026-09-21",
+      "report_date": "2026-09-25",
+      "cause": "collision",
+      "description": "Collision damage.",
+      "parts": [
+        {
+          "name": "fibreglass spoiler",
+          "category": "fibreglass",
+          "cost": 9400
+        },
+        {
+          "name": "front fender",
+          "category": "metal",
+          "cost": 16200
+        }
+      ],
+      "labour_cost": 4000,
+      "driver_licensed": true,
+      "under_influence": false,
+      "commercial_use": false,
+      "police_report_filed": null
+    },
+    "settlement": {
+      "claim_id": "CLM-026",
+      "decision": "approve",
+      "paid": 27600,
+      "adjuster_notes": "collision incident on 21 September 2026, notified 25 September 2026. Workshop estimate: fibreglass spoiler Rs 9,400, front fender Rs 16,200, labour Rs 4,000. Checks: valid licence confirmed, driver not under influence, private use. Outcome: Settled, paid Rs 27,600."
+    },
+    "ground_truth": {
+      "status": "overpaid",
+      "injected_cause": "depreciation_ignored"
+    }
+  },
+  {
+    "claim": {
+      "claim_id": "CLM-027",
+      "policy_id": "POL-1001",
+      "loss_date": "2026-09-01",
+      "report_date": "2026-09-02",
+      "cause": "collision",
+      "description": "Collision damage.",
+      "parts": [
+        {
+          "name": "headlamp assembly",
+          "category": "rubber_plastic",
+          "cost": 9200
+        },
+        {
+          "name": "door panel",
+          "category": "metal",
+          "cost": 14200
+        },
+        {
+          "name": "front fender",
+          "category": "metal",
+          "cost": 17200
+        }
+      ],
+      "labour_cost": 8000,
+      "driver_licensed": true,
+      "under_influence": false,
+      "commercial_use": false,
+      "police_report_filed": null
+    },
+    "settlement": {
+      "claim_id": "CLM-027",
+      "decision": "approve",
+      "paid": 47600,
+      "adjuster_notes": "Loss date 1 September 2026; claim reported 2 September 2026. Cause: collision. Repairer quote lists headlamp assembly Rs 9,200, door panel Rs 14,200, front fender Rs 17,200 and labour of Rs 8,000. File remarks - valid licence confirmed; driver not under influence; private use. Settled, paid Rs 47,600."
+    },
+    "ground_truth": {
+      "status": "overpaid",
+      "injected_cause": "depreciation_ignored"
+    }
+  },
+  {
+    "claim": {
+      "claim_id": "CLM-028",
+      "policy_id": "POL-1003",
+      "loss_date": "2026-10-22",
+      "report_date": "2026-10-22",
+      "cause": "collision",
+      "description": "Collision damage.",
+      "parts": [
+        {
+          "name": "headlamp assembly",
+          "category": "rubber_plastic",
+          "cost": 6900
+        },
+        {
+          "name": "rear bumper",
+          "category": "rubber_plastic",
+          "cost": 13500
+        },
+        {
+          "name": "windscreen",
+          "category": "glass",
+          "cost": 11900
+        },
+        {
+          "name": "front bumper",
+          "category": "rubber_plastic",
+          "cost": 7800
+        }
+      ],
+      "labour_cost": 10800,
+      "driver_licensed": true,
+      "under_influence": false,
+      "commercial_use": false,
+      "police_report_filed": null
+    },
+    "settlement": {
+      "claim_id": "CLM-028",
+      "decision": "approve",
+      "paid": 48900,
+      "adjuster_notes": "collision incident on 22 October 2026, notified 22 October 2026. Workshop estimate: headlamp assembly Rs 6,900, rear bumper Rs 13,500, windscreen Rs 11,900, front bumper Rs 7,800, labour Rs 10,800. Checks: valid licence confirmed, driver not under influence, private use. Outcome: Settled, paid Rs 48,900."
+    },
+    "ground_truth": {
+      "status": "overpaid",
+      "injected_cause": "depreciation_ignored"
+    }
+  },
+  {
+    "claim": {
+      "claim_id": "CLM-029",
+      "policy_id": "POL-1003",
+      "loss_date": "2026-09-30",
+      "report_date": "2026-10-02",
+      "cause": "collision",
+      "description": "Collision damage.",
+      "parts": [
+        {
+          "name": "windscreen",
+          "category": "glass",
+          "cost": 6100
+        },
+        {
+          "name": "front bumper",
+          "category": "rubber_plastic",
+          "cost": 7300
+        }
+      ],
+      "labour_cost": 9700,
+      "driver_licensed": true,
+      "under_influence": false,
+      "commercial_use": false,
+      "police_report_filed": null
+    },
+    "settlement": {
+      "claim_id": "CLM-029",
+      "decision": "approve",
+      "paid": 14400,
+      "adjuster_notes": "collision incident on 30 September 2026, notified 2 October 2026. Workshop estimate: windscreen Rs 6,100, front bumper Rs 7,300, labour Rs 9,700. Checks: valid licence confirmed, driver not under influence, private use. Outcome: Settled, paid Rs 14,400."
+    },
+    "ground_truth": {
+      "status": "underpaid",
+      "injected_cause": "glass_depreciated"
+    }
+  },
+  {
+    "claim": {
+      "claim_id": "CLM-030",
+      "policy_id": "POL-1001",
+      "loss_date": "2026-09-25",
+      "report_date": "2026-09-26",
+      "cause": "collision",
+      "description": "Collision damage.",
+      "parts": [
+        {
+          "name": "windscreen",
+          "category": "glass",
+          "cost": 8700
+        },
+        {
+          "name": "headlamp assembly",
+          "category": "rubber_plastic",
+          "cost": 8700
+        }
+      ],
+      "labour_cost": 9400,
+      "driver_licensed": true,
+      "under_influence": false,
+      "commercial_use": false,
+      "police_report_filed": null
+    },
+    "settlement": {
+      "claim_id": "CLM-030",
+      "decision": "approve",
+      "paid": 17100,
+      "adjuster_notes": "Insured reported a collision loss that happened on 25 September 2026. Intimation received on 26 September 2026. Estimate: windscreen Rs 8,700, headlamp assembly Rs 8,700; labour Rs 9,400. Notes: valid licence confirmed, driver not under influence, private use. Settled, paid Rs 17,100."
+    },
+    "ground_truth": {
+      "status": "underpaid",
+      "injected_cause": "glass_depreciated"
+    }
+  },
+  {
+    "claim": {
+      "claim_id": "CLM-031",
+      "policy_id": "POL-1005",
+      "loss_date": "2026-08-14",
+      "report_date": "2026-08-16",
+      "cause": "collision",
+      "description": "Collision damage.",
+      "parts": [
+        {
+          "name": "windscreen",
+          "category": "glass",
+          "cost": 10500
+        },
+        {
+          "name": "fibreglass spoiler",
+          "category": "fibreglass",
+          "cost": 10800
+        },
+        {
+          "name": "rear bumper",
+          "category": "rubber_plastic",
+          "cost": 13400
+        },
+        {
+          "name": "front bumper",
+          "category": "rubber_plastic",
+          "cost": 12600
+        }
+      ],
+      "labour_cost": 8300,
+      "driver_licensed": true,
+      "under_influence": false,
+      "commercial_use": false,
+      "police_report_filed": null
+    },
+    "settlement": {
+      "claim_id": "CLM-031",
+      "decision": "approve",
+      "paid": 32610,
+      "adjuster_notes": "collision incident on 14 August 2026, notified 16 August 2026. Workshop estimate: windscreen Rs 10,500, fibreglass spoiler Rs 10,800, rear bumper Rs 13,400, front bumper Rs 12,600, labour Rs 8,300. Checks: valid licence confirmed, driver not under influence, private use. Outcome: Settled, paid Rs 32,610."
+    },
+    "ground_truth": {
+      "status": "underpaid",
+      "injected_cause": "glass_depreciated"
+    }
+  },
+  {
+    "claim": {
+      "claim_id": "CLM-032",
+      "policy_id": "POL-1001",
+      "loss_date": "2026-11-14",
+      "report_date": "2026-11-15",
+      "cause": "collision",
+      "description": "Collision damage.",
+      "parts": [
+        {
+          "name": "front bumper",
+          "category": "rubber_plastic",
+          "cost": 13700
+        },
+        {
+          "name": "windscreen",
+          "category": "glass",
+          "cost": 6000
+        },
+        {
+          "name": "door panel",
+          "category": "metal",
+          "cost": 15800
+        },
+        {
+          "name": "rear bumper",
+          "category": "rubber_plastic",
+          "cost": 8200
+        }
+      ],
+      "labour_cost": 4800,
+      "driver_licensed": true,
+      "under_influence": false,
+      "commercial_use": false,
+      "police_report_filed": null
+    },
+    "settlement": {
+      "claim_id": "CLM-032",
+      "decision": "approve",
+      "paid": 31810,
+      "adjuster_notes": "Loss date 14 November 2026; claim reported 15 November 2026. Cause: collision. Repairer quote lists front bumper Rs 13,700, windscreen Rs 6,000, door panel Rs 15,800, rear bumper Rs 8,200 and labour of Rs 4,800. File remarks - valid licence confirmed; driver not under influence; private use. Settled, paid Rs 31,810."
+    },
+    "ground_truth": {
+      "status": "overpaid",
+      "injected_cause": "wrong_age_bracket"
+    }
+  },
+  {
+    "claim": {
+      "claim_id": "CLM-033",
+      "policy_id": "POL-1005",
+      "loss_date": "2026-05-01",
+      "report_date": "2026-05-05",
+      "cause": "collision",
+      "description": "Collision damage.",
+      "parts": [
+        {
+          "name": "front fender",
+          "category": "metal",
+          "cost": 14600
+        },
+        {
+          "name": "fibreglass spoiler",
+          "category": "fibreglass",
+          "cost": 11700
+        }
+      ],
+      "labour_cost": 10100,
+      "driver_licensed": true,
+      "under_influence": false,
+      "commercial_use": false,
+      "police_report_filed": null
+    },
+    "settlement": {
+      "claim_id": "CLM-033",
+      "decision": "approve",
+      "paid": 27010,
+      "adjuster_notes": "Loss date 1 May 2026; claim reported 5 May 2026. Cause: collision. Repairer quote lists front fender Rs 14,600, fibreglass spoiler Rs 11,700 and labour of Rs 10,100. File remarks - valid licence confirmed; driver not under influence; private use. Settled, paid Rs 27,010."
+    },
+    "ground_truth": {
+      "status": "overpaid",
+      "injected_cause": "wrong_age_bracket"
+    }
+  },
+  {
+    "claim": {
+      "claim_id": "CLM-034",
+      "policy_id": "POL-1001",
+      "loss_date": "2026-03-16",
+      "report_date": "2026-03-17",
+      "cause": "collision",
+      "description": "Collision damage.",
+      "parts": [
+        {
+          "name": "bonnet",
+          "category": "metal",
+          "cost": 34700
+        },
+        {
+          "name": "front bumper",
+          "category": "rubber_plastic",
+          "cost": 7200
+        }
+      ],
+      "labour_cost": 9400,
+      "driver_licensed": true,
+      "under_influence": false,
+      "commercial_use": false,
+      "police_report_filed": null
+    },
+    "settlement": {
+      "claim_id": "CLM-034",
+      "decision": "approve",
+      "paid": 39760,
+      "adjuster_notes": "Loss date 16 March 2026; claim reported 17 March 2026. Cause: collision. Repairer quote lists bonnet Rs 34,700, front bumper Rs 7,200 and labour of Rs 9,400. File remarks - valid licence confirmed; driver not under influence; private use. Settled, paid Rs 39,760."
+    },
+    "ground_truth": {
+      "status": "overpaid",
+      "injected_cause": "wrong_age_bracket"
+    }
+  },
+  {
+    "claim": {
+      "claim_id": "CLM-035",
+      "policy_id": "POL-1001",
+      "loss_date": "2026-03-01",
+      "report_date": "2026-03-01",
+      "cause": "collision",
+      "description": "Collision damage.",
+      "parts": [
+        {
+          "name": "front fender",
+          "category": "metal",
+          "cost": 15700
+        },
+        {
+          "name": "bonnet",
+          "category": "metal",
+          "cost": 28100
+        },
+        {
+          "name": "windscreen",
+          "category": "glass",
+          "cost": 8500
+        }
+      ],
+      "labour_cost": 11800,
+      "driver_licensed": true,
+      "under_influence": true,
+      "commercial_use": false,
+      "police_report_filed": null
+    },
+    "settlement": {
+      "claim_id": "CLM-035",
+      "decision": "approve",
+      "paid": 49960,
+      "adjuster_notes": "Loss date 1 March 2026; claim reported 1 March 2026. Cause: collision. Repairer quote lists front fender Rs 15,700, bonnet Rs 28,100, windscreen Rs 8,500 and labour of Rs 11,800. File remarks - valid licence confirmed; driver was under the influence of alcohol; private use. Settled, paid Rs 49,960."
+    },
+    "ground_truth": {
+      "status": "paid_should_deny",
+      "injected_cause": "ignored_exclusion_or_period"
+    }
+  },
+  {
+    "claim": {
+      "claim_id": "CLM-036",
+      "policy_id": "POL-1003",
+      "loss_date": "2026-10-04",
+      "report_date": "2026-10-08",
+      "cause": "collision",
+      "description": "Collision damage.",
+      "parts": [
+        {
+          "name": "fibreglass spoiler",
+          "category": "fibreglass",
+          "cost": 8300
+        },
+        {
+          "name": "bonnet",
+          "category": "metal",
+          "cost": 29300
+        },
+        {
+          "name": "rear bumper",
+          "category": "rubber_plastic",
+          "cost": 8500
+        },
+        {
+          "name": "windscreen",
+          "category": "glass",
+          "cost": 11700
+        }
+      ],
+      "labour_cost": 4700,
+      "driver_licensed": false,
+      "under_influence": false,
+      "commercial_use": false,
+      "police_report_filed": null
+    },
+    "settlement": {
+      "claim_id": "CLM-036",
+      "decision": "approve",
+      "paid": 49365,
+      "adjuster_notes": "Loss date 4 October 2026; claim reported 8 October 2026. Cause: collision. Repairer quote lists fibreglass spoiler Rs 8,300, bonnet Rs 29,300, rear bumper Rs 8,500, windscreen Rs 11,700 and labour of Rs 4,700. File remarks - driver had NO valid licence; driver not under influence; private use. Settled, paid Rs 49,365."
+    },
+    "ground_truth": {
+      "status": "paid_should_deny",
+      "injected_cause": "ignored_exclusion_or_period"
+    }
+  },
+  {
+    "claim": {
+      "claim_id": "CLM-037",
+      "policy_id": "POL-1004",
+      "loss_date": "2026-05-10",
+      "report_date": "2026-05-12",
+      "cause": "collision",
+      "description": "Collision damage.",
+      "parts": [
+        {
+          "name": "front fender",
+          "category": "metal",
+          "cost": 11000
+        },
+        {
+          "name": "front bumper",
+          "category": "rubber_plastic",
+          "cost": 11400
+        },
+        {
+          "name": "fibreglass spoiler",
+          "category": "fibreglass",
+          "cost": 5900
+        }
+      ],
+      "labour_cost": 5700,
+      "driver_licensed": true,
+      "under_influence": false,
+      "commercial_use": false,
+      "police_report_filed": null
+    },
+    "settlement": {
+      "claim_id": "CLM-037",
+      "decision": "approve",
+      "paid": 19530,
+      "adjuster_notes": "collision incident on 10 May 2026, notified 12 May 2026. Workshop estimate: front fender Rs 11,000, front bumper Rs 11,400, fibreglass spoiler Rs 5,900, labour Rs 5,700. Checks: valid licence confirmed, driver not under influence, private use. Outcome: Settled, paid Rs 19,530."
+    },
+    "ground_truth": {
+      "status": "paid_should_deny",
+      "injected_cause": "ignored_exclusion_or_period"
+    }
+  },
+  {
+    "claim": {
+      "claim_id": "CLM-038",
+      "policy_id": "POL-1005",
+      "loss_date": "2026-08-03",
+      "report_date": "2026-08-14",
+      "cause": "collision",
+      "description": "Collision damage.",
+      "parts": [
+        {
+          "name": "front fender",
+          "category": "metal",
+          "cost": 11200
+        },
+        {
+          "name": "rear bumper",
+          "category": "rubber_plastic",
+          "cost": 7700
+        }
+      ],
+      "labour_cost": 8900,
+      "driver_licensed": true,
+      "under_influence": false,
+      "commercial_use": false,
+      "police_report_filed": null
+    },
+    "settlement": {
+      "claim_id": "CLM-038",
+      "decision": "approve",
+      "paid": 17970,
+      "adjuster_notes": "Insured reported a collision loss that happened on 3 August 2026. Intimation received on 14 August 2026. Estimate: front fender Rs 11,200, rear bumper Rs 7,700; labour Rs 8,900. Notes: valid licence confirmed, driver not under influence, private use. Settled, paid Rs 17,970."
+    },
+    "ground_truth": {
+      "status": "paid_should_escalate",
+      "injected_cause": "ignored_fraud_flags"
+    }
+  },
+  {
+    "claim": {
+      "claim_id": "CLM-039",
+      "policy_id": "POL-1005",
+      "loss_date": "2026-04-18",
+      "report_date": "2026-04-29",
+      "cause": "collision",
+      "description": "Collision damage.",
+      "parts": [
+        {
+          "name": "headlamp assembly",
+          "category": "rubber_plastic",
+          "cost": 7000
+        },
+        {
+          "name": "front fender",
+          "category": "metal",
+          "cost": 17000
+        },
+        {
+          "name": "rear bumper",
+          "category": "rubber_plastic",
+          "cost": 11500
+        }
+      ],
+      "labour_cost": 9500,
+      "driver_licensed": true,
+      "under_influence": false,
+      "commercial_use": false,
+      "police_report_filed": null
+    },
+    "settlement": {
+      "claim_id": "CLM-039",
+      "decision": "approve",
+      "paid": 27450,
+      "adjuster_notes": "Loss date 18 April 2026; claim reported 29 April 2026. Cause: collision. Repairer quote lists headlamp assembly Rs 7,000, front fender Rs 17,000, rear bumper Rs 11,500 and labour of Rs 9,500. File remarks - valid licence confirmed; driver not under influence; private use. Settled, paid Rs 27,450."
+    },
+    "ground_truth": {
+      "status": "paid_should_escalate",
+      "injected_cause": "ignored_fraud_flags"
+    }
+  },
+  {
+    "claim": {
+      "claim_id": "CLM-040",
+      "policy_id": "POL-1001",
+      "loss_date": "2026-08-07",
+      "report_date": "2026-08-10",
+      "cause": "collision",
+      "description": "Collision damage.",
+      "parts": [
+        {
+          "name": "front fender",
+          "category": "metal",
+          "cost": 9100
+        },
+        {
+          "name": "headlamp assembly",
+          "category": "rubber_plastic",
+          "cost": 14200
+        }
+      ],
+      "labour_cost": 7600,
+      "driver_licensed": true,
+      "under_influence": false,
+      "commercial_use": false,
+      "police_report_filed": null
+    },
+    "settlement": {
+      "claim_id": "CLM-040",
+      "decision": "deny",
+      "paid": 0,
+      "adjuster_notes": "Insured reported a collision loss that happened on 7 August 2026. Intimation received on 10 August 2026. Estimate: front fender Rs 9,100, headlamp assembly Rs 14,200; labour Rs 7,600. Notes: valid licence confirmed, driver not under influence, private use. Claim denied."
+    },
+    "ground_truth": {
+      "status": "wrongly_denied",
+      "injected_cause": "wrongful_denial"
+    }
+  },
+  {
+    "claim": {
+      "claim_id": "CLM-041",
+      "policy_id": "POL-1003",
+      "loss_date": "2026-07-10",
+      "report_date": "2026-07-14",
+      "cause": "collision",
+      "description": "Collision damage.",
+      "parts": [
+        {
+          "name": "fibreglass spoiler",
+          "category": "fibreglass",
+          "cost": 9900
+        },
+        {
+          "name": "front fender",
+          "category": "metal",
+          "cost": 12200
+        },
+        {
+          "name": "front bumper",
+          "category": "rubber_plastic",
+          "cost": 12600
+        }
+      ],
+      "labour_cost": 10900,
+      "driver_licensed": true,
+      "under_influence": false,
+      "commercial_use": false,
+      "police_report_filed": null
+    },
+    "settlement": {
+      "claim_id": "CLM-041",
+      "decision": "deny",
+      "paid": 0,
+      "adjuster_notes": "Loss date 10 July 2026; claim reported 14 July 2026. Cause: collision. Repairer quote lists fibreglass spoiler Rs 9,900, front fender Rs 12,200, front bumper Rs 12,600 and labour of Rs 10,900. File remarks - valid licence confirmed; driver not under influence; private use. Claim denied."
+    },
+    "ground_truth": {
+      "status": "wrongly_denied",
+      "injected_cause": "wrongful_denial"
+    }
+  }
+]
