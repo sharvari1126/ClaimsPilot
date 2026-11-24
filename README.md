@@ -12,7 +12,7 @@ It combines an LLM-powered investigation agent with a deterministic Python audit
 
 ## Live Demo
 
-🚀 **[Try ClaimsPilot](YOUR_RENDER_URL_HERE)**
+🚀 **[Try ClaimsPilot](https://claimspilot.onrender.com/)**
 
 **Repository:** [github.com/sharvari1126/claimspilot](https://github.com/sharvari1126/claimspilot)
 
@@ -138,7 +138,7 @@ Keep API keys private. Never commit `.env` to GitHub.
 uvicorn claimspilot.api:app --reload --app-dir src
 ```
 
-Open `http://127.0.0.1:8000` in your browser.
+Open http://127.0.0.1:8000 in your browser.
 
 ## Testing
 
@@ -180,3 +180,7 @@ claimspilot/
 ├── requirements.txt
 └── README.md
 ```
+
+---
+
+**ClaimsPilot — making settled claims auditable, one investigation at a time.**
