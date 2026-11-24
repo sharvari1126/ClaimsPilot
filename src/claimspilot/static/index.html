@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ClaimsPilot - settlement auditor</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600&family=Source+Serif+4:opsz,wght@8..60,500;8..60,700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #e8ecef; --surface: #ffffff; --ink: #1d2630; --muted: #5b6773; --rule: #cbd3da;
+    --accent: #2d4f8b; --accent-ink: #ffffff;
+    --bad: #a8322d; --warn: #8a5d00; --good: #1f6f4a;
+    --sans: "Source Sans 3", system-ui, -apple-system, "Segoe UI", sans-serif;
+    --serif: "Source Serif 4", Georgia, "Times New Roman", serif;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font: 16px/1.5 var(--sans); }
+  header { padding: 20px 28px 12px; border-bottom: 1px solid var(--rule); background: var(--surface); }
+  header h1 { margin: 0; font: 700 22px/1.2 var(--serif); }
+  header p { margin: 4px 0 0; color: var(--muted); font-size: 15px; max-width: 70ch; }
+  main { display: grid; grid-template-columns: minmax(0, 360px) minmax(0, 1fr); gap: 24px; padding: 24px 28px 48px; max-width: 1280px; margin: 0 auto; }
+  @media (min-width: 901px) { form { position: sticky; top: 16px; align-self: start; } }
+  @media (max-width: 900px) { main { grid-template-columns: minmax(0, 1fr); padding: 16px; } header { padding: 16px; } form { position: static; } }
+  form, .panel { background: var(--surface); border: 1px solid var(--rule); border-radius: 6px; padding: 18px; }
+  .panel { min-width: 0; overflow-wrap: anywhere; }
+  label { display: block; font-weight: 600; font-size: 14px; margin: 14px 0 4px; }
+  label:first-child { margin-top: 0; }
+  select, input[type=text], input[type=number], textarea {
+    width: 100%; min-width: 0; max-width: 100%; padding: 8px 10px; border: 1px solid var(--rule); border-radius: 4px; font: inherit; background: #fbfcfd; color: var(--ink); }
+  textarea { min-height: 170px; resize: vertical; }
+  .row { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+  .row > div { min-width: 0; }
+  .check { display: flex; gap: 8px; align-items: flex-start; margin-top: 14px; font-size: 14px; }
+  .check input { margin-top: 4px; }
+  .hint { color: var(--muted); font-size: 13px; margin: 2px 0 0; }
+  button { margin-top: 18px; width: 100%; padding: 11px; border: 0; border-radius: 4px; background: var(--accent); color: var(--accent-ink); font: 600 16px var(--sans); cursor: pointer; }
+  button:disabled { opacity: .6; cursor: wait; }
+  button[aria-busy="true"] { opacity: .78; }
+  :focus-visible { outline: 3px solid #86a3d8; outline-offset: 2px; }
+  .empty { color: var(--muted); padding: 40px 8px; max-width: 48ch; }
+  .error { border-left: 4px solid var(--bad); padding: 10px 14px; background: #fbefee; }
+  .verdict { margin: 0; font: 700 28px/1.2 var(--serif); }
+  .verdict.bad { color: var(--bad); } .verdict.warn { color: var(--warn); } .verdict.good { color: var(--good); }
+  .sub { color: var(--muted); margin: 4px 0 18px; }
+  .ledger { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); border-top: 1px solid var(--ink); border-bottom: 3px double var(--ink); margin: 6px 0 8px; }
+  .ledger > div { min-width: 0; padding: 12px 14px; }
+  .ledger > div + div { border-left: 1px solid var(--rule); }
+  .ledger .k { color: var(--muted); font-size: 14px; }
+  .ledger .v { font: 700 26px/1.3 var(--serif); font-variant-numeric: lining-nums tabular-nums; text-align: right; overflow-wrap: anywhere; }
+  .ledger .v.bad { color: var(--bad); } .ledger .v.warn { color: var(--warn); } .ledger .v.good { color: var(--good); }
+  h3 { font: 700 17px/1.3 var(--serif); margin: 26px 0 8px; }
+  ul.evidence { margin: 0; padding-left: 20px; } ul.evidence li { margin: 4px 0; }
+  table { border-collapse: collapse; table-layout: fixed; width: 100%; font-variant-numeric: tabular-nums; font-size: 15px; }
+  th, td { text-align: right; padding: 6px 8px; border-bottom: 1px solid var(--rule); overflow-wrap: anywhere; }
+  th:first-child, td:first-child { text-align: left; } th { font-weight: 600; color: var(--muted); }
+  tfoot td { font-weight: 600; border-bottom: 0; }
+  .memo-heading { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; }
+  .memo { max-width: 70ch; white-space: pre-wrap; overflow-wrap: anywhere; line-height: 1.65; border: 1px solid var(--rule); border-radius: 4px; padding: 12px 14px; background: #f8fafb; }
+  .citation { color: var(--accent); font-weight: 600; }
+  .badge { display: inline-block; font-size: 13px; padding: 2px 8px; border-radius: 10px; border: 1px solid var(--rule); color: var(--muted); font-family: var(--sans); font-weight: 400; }
+  .badge.ok { color: var(--good); border-color: var(--good); } .badge.no { color: var(--warn); border-color: var(--warn); }
+  details { border-top: 1px solid var(--rule); padding: 10px 0; } details:last-of-type { border-bottom: 1px solid var(--rule); }
+  details { min-width: 0; }
+  summary { position: relative; list-style: none; padding-left: 18px; cursor: pointer; font: 600 15px/1.4 var(--sans); }
+  summary::-webkit-details-marker { display: none; }
+  summary::before { content: ""; position: absolute; left: 3px; top: .36em; width: 6px; height: 6px; border-right: 1px solid var(--muted); border-bottom: 1px solid var(--muted); transform: rotate(45deg); }
+  details[open] summary::before { top: .48em; transform: rotate(225deg); }
+  .details-hint { margin: 2px 0 0 18px; color: var(--muted); font-size: 13px; }
+  pre { max-width: 100%; margin: 8px 0 0; padding: 10px; background: #f1f4f6; white-space: pre-wrap; overflow-wrap: anywhere; font-size: 13px; border-radius: 4px; }
+  .step { margin: 8px 0; } .step b { font-variant-numeric: tabular-nums; }
+  @media (max-width: 480px) {
+    .ledger { grid-template-columns: minmax(0, 1fr); }
+    .ledger > div + div { border-left: 0; border-top: 1px solid var(--rule); }
+    .ledger > div { padding: 10px 12px; }
+  }
+</style>
+</head>
+<body>
+<header>
+  <h1>ClaimsPilot settlement auditor</h1>
+  <p>Re-checks a settled motor claim with a deterministic rules engine, shows what should have been paid, and explains the gap. Synthetic data and simplified rules.</p>
+</header>
+<main>
+  <form id="form">
+    <label for="case">Settled claim</label>
+    <select id="case"><option value="">Write your own</option></select>
+    <p class="hint" id="caseHint"></p>
+
+    <label for="policy">Policy</label>
+    <select id="policy"></select>
+
+    <div class="row">
+      <div><label for="paid">Amount paid (₹)</label><input id="paid" type="number" min="0" value="0"></div>
+      <div><label for="decision">Adjuster decision</label>
+        <select id="decision">
+          <option value="approve">Approved</option><option value="deny">Denied</option>
+          <option value="escalate">Sent to fraud review</option><option value="request_info">Info requested</option>
+        </select></div>
+    </div>
+
+    <label for="notes">Adjuster notes</label>
+    <textarea id="notes" placeholder="Paste the adjuster's notes for the claim."></textarea>
+
+    <div class="check">
+      <input type="checkbox" id="useLlm">
+      <div><label for="useLlm" style="margin:0;font-weight:600">Use Gemini for extraction and investigation</label>
+        <p class="hint" id="llmHint">Off: a regex reader that only understands the sample notes, plus a template memo.</p></div>
+    </div>
+    <button id="go" type="submit">Run audit</button>
+  </form>
+
+  <section id="out" class="panel" aria-live="polite">
+    <div class="empty">Pick a settled claim or paste adjuster notes, then run the audit. The result shows what was paid, what the rules say it should have been, and why.</div>
+  </section>
+</main>
+
+<script>
+const $ = s => document.querySelector(s);
+const money = n => '₹' + Number(n).toLocaleString('en-IN');
+const signed = n => (n > 0 ? '+' : n < 0 ? '−' : '') + money(Math.abs(n));
+const STATUS = {
+  correct: ['Paid correctly', 'good'], overpaid: ['Overpaid', 'bad'], underpaid: ['Underpaid', 'warn'],
+  paid_should_deny: ['Paid, but the claim should have been denied', 'bad'],
+  paid_should_escalate: ['Paid, but the claim should have gone to fraud review', 'bad'],
+  wrongly_denied: ['Wrongly denied', 'warn'], needs_review: ['Paid without information the policy requires', 'warn'],
+};
+const CAUSE = {
+  deductible_ignored: 'The deductible was not subtracted.',
+  deductible_applied_twice: 'The deductible was subtracted twice.',
+  depreciation_ignored: 'Parts were not depreciated.',
+  glass_depreciated: 'Glass was depreciated, but the policy does not depreciate glass.',
+  wrong_age_bracket: 'Metal parts used the depreciation bracket for a younger vehicle.',
+};
+const SOURCE = {
+  llm: ['Written by Gemini, checked against tool outputs', 'ok'],
+  template: ['Template memo, no LLM used', ''],
+  template_after_rejection: ['Gemini memo rejected by the validator, template shown', 'no'],
+  template_max_steps: ['Agent hit its step limit, template shown', 'no'],
+};
+
+function el(tag, cls, text, ...kids) {
+  const e = document.createElement(tag);
+  if (cls) e.className = cls;
+  if (text != null) e.textContent = text;
+  kids.forEach(k => k && e.append(k));
+  return e;
+}
+let cases = [];
+
+async function init() {
+  const [pol, cs, health] = await Promise.all([
+    fetch('/api/policies').then(r => r.json()), fetch('/api/cases').then(r => r.json()), fetch('/api/health').then(r => r.json())]);
+  pol.forEach(p => $('#policy').append(new Option(`${p.policy_id} - ${p.vehicle}, ${p.cover_type}`, p.policy_id)));
+  cases = cs;
+  cs.forEach((c, i) => $('#case').append(new Option(`${c.claim_id} on ${c.policy_id}`, i)));
+  if (health.llm_configured) { $('#llmHint').textContent = `On: ${health.model} extracts the facts and investigates with tools. A validator checks its memo.`; }
+  else { $('#useLlm').disabled = true; $('#llmHint').textContent = 'Not available: set GEMINI_API_KEY (see .env.example) and restart.'; }
+}
+
+$('#case').addEventListener('change', e => {
+  const c = cases[e.target.value];
+  if (!c) { $('#caseHint').textContent = ''; return; }
+  $('#policy').value = c.policy_id; $('#paid').value = c.paid; $('#decision').value = c.decision; $('#notes').value = c.notes;
+  $('#caseHint').textContent = `Benchmark label: ${c.benchmark_label}`;
+});
+
+$('#form').addEventListener('submit', async e => {
+  e.preventDefault();
+  const out = $('#out'); const btn = $('#go');
+  btn.disabled = true; btn.textContent = 'Auditing...';
+  btn.setAttribute('aria-busy', 'true');
+  const body = { policy_id: $('#policy').value, notes: $('#notes').value, paid: Number($('#paid').value || 0),
+                 decision: $('#decision').value, use_llm: $('#useLlm').checked,
+                 claim_id: ($('#case').value !== '' ? cases[$('#case').value].claim_id : 'CASE-1') };
+  try {
+    const r = await fetch('/api/audit', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(body) });
+    const data = await r.json();
+    out.replaceChildren(r.ok ? render(data) : el('div', 'error', typeof data.detail === 'string' ? data.detail : 'The request was not valid. Check the notes and amount.'));
+  } catch (err) {
+    out.replaceChildren(el('div', 'error', 'Could not reach the server. Is it running?'));
+  } finally { btn.disabled = false; btn.removeAttribute('aria-busy'); btn.textContent = 'Run audit'; }
+});
+
+function render(r) {
+  const f = r.finding, [label, tone] = STATUS[f.status];
+  const root = el('div');
+  root.append(el('h2', 'verdict ' + tone, label), el('p', 'sub', `${r.claim_id} on ${r.policy_id}. Correct outcome under the rules: ${f.expected_outcome.replace('_', ' ')}.`));
+
+  const cell = (k, v, t) => el('div', null, null, el('div', 'k', k), el('div', 'v ' + (t || ''), v));
+  root.append(el('div', 'ledger', null, cell('Paid', money(f.paid)), cell('Should have been', money(f.expected_payout)), cell('Difference', f.delta === 0 ? '₹0' : signed(f.delta), f.delta === 0 ? 'good' : tone)));
+
+  if (f.likely_causes.length) {
+    root.append(el('h3', null, 'Likely cause'));
+    const ul = el('ul', 'evidence'); f.likely_causes.forEach(c => ul.append(el('li', null, CAUSE[c] || c))); root.append(ul);
+  } else if (['overpaid', 'underpaid'].includes(f.status)) {
+    root.append(el('h3', null, 'Likely cause'), el('p', null, 'No single named mistake reproduces the amount paid.'));
+  }
+  if (f.evidence.length) { root.append(el('h3', null, 'Evidence')); const ul = el('ul', 'evidence'); f.evidence.forEach(x => ul.append(el('li', null, x))); root.append(ul); }
+
+  const b = r.breakdown;
+  if (b && b.lines.length) {
+    root.append(el('h3', null, 'Correct payout, line by line'));
+    const t = el('table'); t.append(el('thead', null, null, (() => { const tr = el('tr'); ['Part', 'Cost', 'Depreciation', 'Payable'].forEach(h => tr.append(el('th', null, h))); return tr; })()));
+    const tb = el('tbody');
+    b.lines.forEach(l => { const tr = el('tr'); [l.name, money(l.cost), `${l.dep_percent}% (${money(l.depreciation)})`, money(l.payable)].forEach(x => tr.append(el('td', null, x))); tb.append(tr); });
+    const lab = el('tr'); ['Labour (not depreciated)', money(b.labour_cost), '', money(b.labour_cost)].forEach(x => lab.append(el('td', null, x))); tb.append(lab);
+    t.append(tb);
+    const tf = el('tfoot'); [['Assessed loss', b.assessed_loss], ['Deductible', -b.deductible], ['Payout', b.payout]].forEach(([k, v]) => {
+      const tr = el('tr'); tr.append(el('td', null, k), el('td'), el('td'), el('td', null, v < 0 ? '−' + money(-v) : money(v))); tf.append(tr); });
+    t.append(tf); root.append(t);
+  } else if (b && b.total_loss) {
+    root.append(el('h3', null, 'Correct payout'), el('p', null, `Total loss: insured value less deductible, ${money(b.payout)}.`));
+  }
+
+  const [srcLabel, srcTone] = SOURCE[r.memo_source] || [r.memo_source, ''];
+  const memo = el('div', 'memo');
+  const citationPattern = /\[T\d+\]/g;
+  let lastIndex = 0, match;
+  while ((match = citationPattern.exec(r.memo)) !== null) {
+    if (match.index > lastIndex) memo.append(document.createTextNode(r.memo.slice(lastIndex, match.index)));
+    memo.append(el('span', 'citation', match[0]));
+    lastIndex = citationPattern.lastIndex;
+  }
+  if (lastIndex < r.memo.length) memo.append(document.createTextNode(r.memo.slice(lastIndex)));
+  root.append(el('h3', 'memo-heading', 'Audit memo', el('span', 'badge ' + srcTone, srcLabel)), memo);
+  if (r.validation_issues.length) { const ul = el('ul', 'evidence'); r.validation_issues.forEach(i => ul.append(el('li', null, i))); root.append(el('p', 'hint', 'Validator notes:'), ul); }
+
+  const det = (title, hint, child) => el('details', null, null, el('summary', null, title), el('p', 'details-hint', hint), child);
+  if (r.trace.length) {
+    const wrap = el('div');
+    r.trace.forEach(s => wrap.append(el('div', 'step', null, el('b', null, `[${s.id}] ${s.tool}`), el('pre', null, s.output))));
+    root.append(det(`Investigation trace (${r.trace.length} tool calls)`, 'Which tools the agent called and what they returned.', wrap));
+  }
+  const facts = r.extraction_warnings.length ? r.extraction_warnings.join('\n') + '\n\n' : '';
+  root.append(det(`Extracted claim facts (${r.extraction_source})`, 'What the model read from the adjuster’s notes. null means not stated.', el('pre', null, facts + JSON.stringify(r.claim, null, 2))));
+  return root;
+}
+init();
+</script>
+</body>
+</html>
